@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Card } from 'antd';
 import axios from 'axios';
 
-function CardViewHooks() {
+function CardContainerHooks() {
   const [data, setData] = useState({ results: [] });
 
   useEffect(() => {
@@ -27,4 +27,4 @@ function CardViewHooks() {
   )
 }
 
-export default CardViewHooks;
+export default CardContainerHooks;

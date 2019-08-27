@@ -1,7 +1,7 @@
 import React from 'react';
 import { Card } from 'antd';
 
-class CardView extends React.Component {
+class CardContainer extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -36,4 +36,4 @@ class CardView extends React.Component {
   }
 }
 
-export default CardView;
+export default CardContainer;
