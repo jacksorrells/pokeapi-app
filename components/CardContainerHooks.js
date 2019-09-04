@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Card } from 'antd';
+import CardHooks from '/components/CardHooks';
 import axios from 'axios';
 
 function CardContainerHooks() {

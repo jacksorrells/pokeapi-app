@@ -4,7 +4,7 @@ import axios from 'axios';
 
 const { Meta } = Card;
 
-function CardHooks() {
+function CardHooks(props) {
   const [data, setData] = useState({ results: [] });
 
   useEffect(() => {
@@ -19,25 +19,19 @@ function CardHooks() {
   return (
     <div>
       <Card
-    style={{ width: 300 }}
-    cover={
-      <img
-        alt="example"
-        src="https://gw.alipayobjects.com/zos/rmsportal/JiqGstEfoWAOHiTxclqi.png"
-      />
-    }
-    actions={[
-      <Icon type="setting" key="setting" />,
-      <Icon type="edit" key="edit" />,
-      <Icon type="ellipsis" key="ellipsis" />,
-    ]}
-  >
-    <Meta
-      avatar={<Avatar src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" />}
-      title="Card title"
-      description="This is the description"
-    />
-  </Card>
+        style={{ width: 300 }}
+        actions={[
+          <Icon type="setting" key="setting" />,
+          <Icon type="edit" key="edit" />,
+          <Icon type="ellipsis" key="ellipsis" />,
+        ]}
+      >
+        <Meta
+          avatar={<Avatar src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" />}
+          title={data.name}
+          description="This is the description"
+        />
+      </Card>
     </div>
   )
 }
