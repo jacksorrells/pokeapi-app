@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { render } from 'react-dom';
 import Navbar from './components/Navbar';
+import NavbarHooks from './components/NavbarHooks';
 import CardContainer from './components/CardContainer';
 import CardContainerHooks from './components/CardContainerHooks';
 import Hello from './Hello';
@@ -18,7 +19,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Navbar />
+        <NavbarHooks />
         <Hello name={this.state.name} />
         <CardContainerHooks />
         <CardContainer />
