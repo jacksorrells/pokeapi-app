@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
 import { render } from 'react-dom';
-import Navbar from './components/Navbar';
-import NavbarHooks from './components/NavbarHooks';
-import CardContainer from './components/CardContainer';
-import CardContainerHooks from './components/CardContainerHooks';
+import Navbar from './components/classes/Navbar';
+import NavbarHooks from './components/hooks/NavbarHooks';
+import CardContainer from './components/classes/CardContainer';
+import CardContainerHooks from './components/hooks/CardContainerHooks';
 import Hello from './Hello';
-import Button from 'antd/es/button';
 import './style.css';
 
 class App extends Component {

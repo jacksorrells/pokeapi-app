@@ -5,15 +5,15 @@ const { SubMenu } = Menu;
 
 
 function NavbarHooks() {
-  const [data, setData] = useState({ currentPage: [] });
+  const [page, setPage] = useState({ current: [] });
 
   const handleClick = (e) => {
     console.log('click', e);
-    setData(e.key);
+    setPage(e.key);
   };
 
   return (
-    <Menu onClick={handleClick} selectedKeys={[data.currentPage]} mode="horizontal">
+    <Menu onClick={handleClick} selectedKeys={[page.current]} mode="horizontal">
       <Menu.Item key="home">
         <Icon type="mail" />
         Home
